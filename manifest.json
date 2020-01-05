@@ -1,0 +1,22 @@
+{
+    "name": "AutomatedHunter",
+    "version": "0.001",
+    "manifest_version": 2,
+    "description": "AutomatedHunter is a Chrome Extension that tests basic web problems By Github.com/M507 .",
+  "background": {
+    "scripts": ["AutomatedHunter.js"]
+  },
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "background",
+    "http://*/*",
+    "https://*/*",
+    "cookies",
+    "webNavigation",
+    "webRequest"
+  ]
+}

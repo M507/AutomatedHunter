@@ -11,7 +11,7 @@ var outOfScopeList = ["chrome://newtab/", "google","undefined","stackoverflow","
 // Open Redirect parameters.
 var openRedirectList = ["?next=","?url=","?target=","?rurl=","?dest=","?destination=","?redir=","?redirect_uri=","?redirect_url=","?redirect=","/redirect/","/cgi-bin/redirect.cgi?","/out/","/out?","?view=","/login?to=","?image_url=","?go=","?return=","?returnTo=","?return_to=","?checkout_url=","?continue=","?return_path="];
 // SQL endpoint parameters.
-var SQLList = ["?id=","?q=","?search="];
+var SQLList = ["?id=","?q=","?search=","?title="];
 // possible LFI/RFI parameters.
 var LFIList = ["?page="];
 
@@ -71,6 +71,7 @@ function getDomain(url) {
 }
 
 function openURL(url) {
+    url = url+"&#DONE";
     if(url!==undefined){
     chrome.tabs.create({url:url})
   }
@@ -221,7 +222,7 @@ function SQLTechnique(x,url) {
     var c = ["'","\"","#",";",")","*","'"];
     for (ii in c) {
         part1 = SQLList[x].toString();
-        part2 = SQLList[x].toString()+c[ii].toString()+"&#DONE&";
+        part2 = SQLList[x].toString()+c[ii].toString()+"&";
         u1 = url.replace(part1, part2);
         openURL(u1);
         }

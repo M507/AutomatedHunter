@@ -1,7 +1,7 @@
 # AutomatedHunter
 Google Chrome Extension automates testing fundamental Web Problems via Chrome
 
-The idea is to fuzz some common parameters semi-automatically without the need to entirely doing it manually and without using vulnerability scanners. The solution I implemented is a browser extension that detects these common parameters while browsing and tests them immediately and spawns up every test on a different tab to manually look at the resulting response. So far, it tests GET request parameters for common vulnerabilities like Local file inclusion, Remote File Inclusion, Endpoint SQL injection, and open redirect. 
+The idea is to scan some common parameters semi-automatically without the need to entirely doing it manually and without using vulnerability scanners. The solution I implemented is a browser extension that detects these common parameters while browsing and tests them immediately and spawns up every test on a different tab to manually look at the resulting response. So far, it tests GET request parameters for common vulnerabilities like Local file inclusion, Remote File Inclusion, Endpoint SQL injection, and open redirect. 
 
 
 This is a simplified version without many tests. If you have cool ideas/tests/methodologies exploiting a specific type of vulnerability let's merge them togother :)

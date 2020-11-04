@@ -6,7 +6,8 @@
 
 
 // Always out of scope sites.
-var outOfScopeList = ["chrome://newtab/", "google","undefined","stackoverflow","github","linkedin","stackexchange","medium.com","example.com","10.0.0.230","microsoft.com","passwd",".gov","hackerone.com","chrome://","#DONE","AH=true","rit.edu"];
+var outOfScopeList = ["chrome://newtab/", "google","undefined","stackoverflow","github","gitlab","linkedin","stackexchange","medium.com","example.com","microsoft.com","passwd",".gov","hackerone.com","chrome://","#DONE","AH=true","rit.edu","gov.sa","mohad.red","ibm.com","slack.com","elearnsecurity.com","microsoftonline.com","//192.","amazon.com"
+];
 
 // Open Redirect parameters.
 // TODO - ADD & with ?

@@ -10,7 +10,7 @@ This is a simplified version without many tests. If you have cool ideas/tests/me
 - Enable Chrome developer mode.
 - Load the extension. (After configuring the scope)
 - Start browsing the site you are testing.
-- It will spawn up new tabs for each basic test, which will allow you to force on more complicated tests.
+- It will spawn up new tabs for each basic test.
 
 ### Future
 If you want to invest time to imporve it, here are some ideas I think it worth considering and easy to implement over GET requests.
